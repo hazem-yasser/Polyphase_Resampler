@@ -1,0 +1,21 @@
+# ===================================================================
+# DFE_FPGA GitHub Language Settings
+# ===================================================================
+
+# Treat IPython notebooks as documentation
+*.ipynb linguist-documentation
+
+# Ignore binary/output files for language stats
+*.png linguist-vendored
+*.vvp linguist-vendored
+*.out linguist-vendored
+*.txt linguist-vendored
+*.pdf linguist-vendored
+
+# Ignore macOS system files
+.DS_Store linguist-vendored
+
+# Keep RTL and testbench files as code
+*.sv linguist-language=SystemVerilog
+*.mem linguist-language=SystemVerilog
+*.xdc linguist-language=SystemVerilog
